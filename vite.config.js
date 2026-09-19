@@ -6,6 +6,7 @@ import { VitePWA } from 'vite-plugin-pwa';
 export default defineConfig({
   root: resolve(__dirname, 'src'),
   publicDir: resolve(__dirname, 'src', 'public'),
+  base: '/story-share-dicoding/',
   build: {
     outDir: resolve(__dirname, 'dist'),
     emptyOutDir: true,
@@ -33,19 +34,19 @@ export default defineConfig({
         background_color: '#F3F4F6',
         display: 'standalone',
         orientation: 'portrait-primary',
-        scope: '/',
-        start_url: '/',
+        scope: '/story-share-dicoding/',
+        start_url: '/story-share-dicoding/',
         lang: 'id',
         categories: ['social', 'news'],
         icons: [
           {
-            src: '/icons/app_icon_512_1789821112827.jpg',
+            src: '/story-share-dicoding/icons/app_icon_512_1789821112827.jpg',
             sizes: '192x192',
             type: 'image/jpeg',
             purpose: 'any',
           },
           {
-            src: '/icons/app_icon_512_1789821112827.jpg',
+            src: '/story-share-dicoding/icons/app_icon_512_1789821112827.jpg',
             sizes: '512x512',
             type: 'image/jpeg',
             purpose: 'any maskable',
@@ -53,7 +54,7 @@ export default defineConfig({
         ],
         screenshots: [
           {
-            src: '/screenshots/app_screenshot_1789821132035.jpg',
+            src: '/story-share-dicoding/screenshots/app_screenshot_1789821132035.jpg',
             sizes: '1366x768',
             type: 'image/jpeg',
             form_factor: 'wide',
@@ -65,15 +66,15 @@ export default defineConfig({
             name: 'Add Story',
             short_name: 'Add',
             description: 'Tambah cerita baru',
-            url: '/#/add-story',
-            icons: [{ src: '/icons/app_icon_512_1789821112827.jpg', sizes: '192x192' }],
+            url: '/story-share-dicoding/#/add-story',
+            icons: [{ src: '/story-share-dicoding/icons/app_icon_512_1789821112827.jpg', sizes: '192x192' }],
           },
           {
             name: 'Saved Stories',
             short_name: 'Saved',
             description: 'Lihat cerita tersimpan',
-            url: '/#/saved-stories',
-            icons: [{ src: '/icons/app_icon_512_1789821112827.jpg', sizes: '192x192' }],
+            url: '/story-share-dicoding/#/saved-stories',
+            icons: [{ src: '/story-share-dicoding/icons/app_icon_512_1789821112827.jpg', sizes: '192x192' }],
           },
         ],
       },
