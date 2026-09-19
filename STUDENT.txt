@@ -1,2 +1,2 @@
-APP_URL=<url_aplikasi>
-MAP_SERVICE_API_KEY=<api_key>
+APP_URL=https://elkana05.github.io/story-share-dicoding/
+MAP_SERVICE_API_KEY=OpenStreetMap (tidak memerlukan API key berbayar)
