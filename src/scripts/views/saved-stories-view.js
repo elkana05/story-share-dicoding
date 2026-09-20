@@ -85,7 +85,7 @@ class SavedStoriesView {
           loading="lazy"
         >
         <div class="story-info">
-          <h3 class="story-author">${story.name}</h3>
+          <h2 class="story-author">${story.name}</h2>
           <p class="story-date">${date}</p>
           <p class="story-desc">${story.description}</p>
           <button
