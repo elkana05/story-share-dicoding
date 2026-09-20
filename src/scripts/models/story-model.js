@@ -42,6 +42,21 @@ class StoryModel {
     
     return responseJson;
   }
+
+  static async getStoryById(id) {
+    const response = await fetch(`${CONFIG.BASE_URL}/stories/${id}`, {
+      headers: {
+        Authorization: `Bearer ${AuthModel.getToken()}`,
+      },
+    });
+
+    const responseJson = await response.json();
+    if (responseJson.error) {
+      throw new Error(responseJson.message);
+    }
+
+    return responseJson.story;
+  }
 }
 
 export default StoryModel;

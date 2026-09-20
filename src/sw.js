@@ -74,8 +74,8 @@ self.addEventListener('push', (event) => {
   let notificationTitle = 'StoryShare';
   let notificationOptions = {
     body: 'Ada cerita baru yang menunggu Anda!',
-    icon: '/icons/app_icon_512_1789821112827.jpg',
-    badge: '/icons/app_icon_512_1789821112827.jpg',
+    icon: '/icons/icon-192.png',
+    badge: '/icons/icon-144.png',
     vibrate: [100, 50, 100],
     data: { url: '/' },
     actions: [
