@@ -45,6 +45,12 @@ export default defineConfig(({ mode }) => {
         icons: [
           {
             src: `${basePath}icons/app_icon_512_1789821112827.jpg`,
+            sizes: '144x144',
+            type: 'image/jpeg',
+            purpose: 'any',
+          },
+          {
+            src: `${basePath}icons/app_icon_512_1789821112827.jpg`,
             sizes: '192x192',
             type: 'image/jpeg',
             purpose: 'any',
